@@ -18,7 +18,7 @@ img{
     max-width: 100%;
 }
 
-/*RESET CSSkjnjnfg;d*/
+/*RESET CSS*/
 
 /*MOBILE FIRST*/
 
@@ -34,11 +34,6 @@ img{
     margin: auto;
 }
 
-/* .logo-container{
-   border: 2px solid purple; 
-     max-width: 120px; 
-} */
-
 .logo{
     margin: 0 auto;
 }
@@ -50,9 +45,6 @@ img{
     display: flex;
     flex-direction: column;
 }
-
-/* .nav-bar{
-} */
 
 .nav-link{
     color: white;
@@ -90,13 +82,6 @@ h2{
     padding: 10px 0;
 }
 
-
-/* .logo-footer {
-    width: 50px;
-    margin: 0 auto;
-    display: block;
-} */
-
 footer{
     /* border: 3px solid orange; */
     font-size: 0.6rem;
@@ -119,10 +104,6 @@ footer{
     height: auto;
     margin: 0 auto;
 }
-
-/* [title = "test"] {
-    border: 10px solid red;
-} */
 
 /* Tablette */
 
