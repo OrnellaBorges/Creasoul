@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <style>
+      li {
+        padding:2em;
+        list-style: none;
+        background:white;
+        border:1px solid grey;
+      }
+      ul {
+        border:1px dotted red;
+        display:flex;
+      }
+
+      .box :nth-child(1) { order: 2; }
+      .box :nth-child(2) { order: 3; }
+      .box :nth-child(3) { order: 4; }
+      .box :nth-child(4) { order: 1; }
+      .box :nth-child(5) { order: 5; }
+
+    </style>
+  </head>
+<body style="background:rgba(0,0,0,0.1);font-family: arial;">
+
+<h2>Défaut</h2>
+<ul>
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>flex-direction:row-reverse</h2>
+<ul style="flex-direction:row-reverse">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>flex-direction:column</h2>
+<ul style="flex-direction:column">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>flex-direction:column-reverse</h2>
+<ul style="flex-direction:column-reverse">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>nowrap</h2>
+<ul>
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>wrap</h2>
+<ul style="flex-wrap:wrap;width:200px">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>align-items:center</h2>
+<ul style="align-items:center;height:100px">
+  <li>A</li>
+  <li style="height:60%">B</li>
+  <li>C</li>
+  <li style="height:60%">D</li>
+  <li>E</li>
+  <li style="height:60%">F</li>
+</ul>
+
+<h2>align-items:flex-start</h2>
+<ul style="align-items:flex-start;height:100px">
+  <li style="height:60%">A</li>
+  <li>B</li>
+  <li>C</li>
+  <li style="height:60%">D</li>
+  <li>E</li>
+  <li style="height:60%">F</li>
+</ul>
+
+<h2>align-items:flex-end</h2>
+<ul style="align-items:flex-end;height:100px">
+  <li style="height:60%">A</li>
+  <li>B</li>
+  <li>C</li>
+  <li style="height:60%">D</li>
+  <li>E</li>
+  <li style="height:60%">F</li>
+</ul>
+
+<h2>justify-content:center</h2>
+<ul style="justify-content:center">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>justify-content:flex-start</h2>
+<ul style="justify-content:flex-start">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>justify-content:flex-end</h2>
+<ul style="justify-content:flex-end">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>justify-content:space-between</h2>
+<ul style="justify-content:space-between">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>justify-content:space-around</h2>
+<ul style="justify-content:space-around">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>justify-content:space-evenly</h2>
+<ul style="justify-content:space-evenly">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>order</h2>
+<ul class="box">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+</ul>
+
+<h2>grow</h2>
+<ul>
+  <li style="flex-grow: 1;">A</li>
+  <li>B</li>
+  <li style="flex-grow: 3;">C</li>
+  <li>D</li>
+  <li>E</li>
+  <li style="flex-grow: 4;">F</li>
+</ul>
+
+<h2>shrink</h2>
+<ul style="display:flex;width:200px">
+  <li style="flex-shrink : 2;">A</li>
+  <li style="flex-shrink : 1;">B</li>
+  <li>C</li>
+  <li style="flex-shrink : 3;">D</li>
+  <li>E</li>
+  <li style="flex-shrink : 5;">F</li>
+</ul>
+
+<h2>grow</h2>
+<ul style="display:flex;width:800px;gap:10px;margin:10px">
+  <li style="flex-grow:1">
+  flex-grow: 1
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, cumque, suscipit excepturi modi officiis expedita at ea aliquam perspiciatis quia perferendis eum quisquam! Fugit, a, illum, quae velit maxime vitae alias dicta minima voluptate dolores cum corporis dolore et nam rem eius sunt sint ducimus explicabo quasi ex eligendi asperiores. Blanditiis explicabo fuga labore laudantium sed distinctio facilis.
+  </li>
+  <li style="flex-grow:2">
+  flex-grow: 2
+  Asperiores, unde, cum velit obcaecati aspernatur a quisquam sit laudantium nisi nulla tempora repudiandae eos quidem esse eius dolorem et pariatur non iste fuga. Dolor, porro labore quaerat rerum numquam enim? Veniam, maxime, tempore aliquid culpa nesciunt asperiores quasi aperiam labore ipsa veritatis doloremque deserunt nisi non eos ex quibusdam quod tempora ratione aliquam autem dolores est minima sunt? Assumenda, numquam amet enim perferendis corporis cum voluptas sint fuga repellat illo a vel sunt.
+  </li>
+  <li style="flex-grow:1">
+  flex-grow: 1
+  Sunt, asperiores molestias excepturi soluta aut officiis minima dolorum commodi quasi tempore dolore labore officia dolorem explicabo esse laudantium eveniet neque incidunt cupiditate fugiat vitae expedita aliquid sequi necessitatibus voluptatibus quibusdam veritatis cum! Quae, modi, architecto.
+  </li>
+</ul>
+
+</body>
+</html>

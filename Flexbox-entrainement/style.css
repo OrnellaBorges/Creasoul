@@ -1,0 +1,74 @@
+*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+body{
+    background-color: peachpuff;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ff5722;
+    border: 4px solid #ffc107;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.title-header{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-main{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.container-elements{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items:center; 
+    padding: 20px;
+}
+
+.elements{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 4rem;
+    height: 20px;
+    border : 2px solid rgb(54, 26, 1);
+    padding: 10px 20px;
+    list-style-type: none;
+    background-color: #ec8507;
+}
+
+/* container :nth-child(2)*/
